@@ -1,0 +1,99 @@
+/*
+  YÖNERGELER
+  - Sayfa 480px ve daha küçük genişliğe sahip ekranlarda `responsive.jpg` dosyasındaki gibi görünmeli.
+  - Bu yüzden `Live Server` eklentisini kullan, yaptıklarını tasarımla kıyaslayarak ilerle.
+  - Bazı test direktiflerinin ipuçlarını `responsive.jpg` dosyasında bulacaksın.
+
+  Mobil tasarımı uygularken ihtiyaç duyacağınız bazı sayısal değerler:
+  - Tüm sayfa yazı büyüklüğü: 16px
+  - `header` gap değeri: 15px,
+  - `header` padding değerleri: üstten 20px, yanlardan 10px, alttan 15px
+  - Menü linkleri parentının 25% 'i,
+  - `hero` üst boşluk: 0, köşe yuvarlaklığı: 0
+  - `hero` yükseklik: ekran yüksekliğinin 70% 'i
+  - `hero` iç boşluk: 10px
+
+  Ayrıca, `h1` ve `nav` elemanlaının yazı büyüklükleri de sayfanın genel yazı büyüklüğüne endekslenerek düzeltilmeli.
+  - Başlığın yazı büyüklüğü dokümanın yazı büyüklüğünün 2 katı olmalı. 
+  - Navigasyonun yazı büyüklüğü dokümanın yazı büyüklüğünün 0.75 katı olmalı. 
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu-bg {
+  background-color: #ededf9;
+  border-bottom: 1px solid #e3e1f9
+}
+
+.wrapper-centered {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* header alanı başlıyor */
+
+header {
+  padding: 25px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  display: block;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+nav a {
+  color: #0066c8;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: black
+}
+
+/* header alanı bitti */
+
+/* hero alanı başlıyor */
+.hero {
+  margin-top: 20px;
+  height: 400px;
+  background-color: #080808;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #70d000;
+}
+
+.hero p {
+  margin: 5px 0 0 0;
+  color: white;
+}
+
+/* hero alanı bitti */
