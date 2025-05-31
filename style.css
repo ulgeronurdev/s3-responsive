@@ -31,7 +31,6 @@ body {
   font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
 .menu-bg {
   background-color: #ededf9;
   border-bottom: 1px solid #e3e1f9
@@ -45,11 +44,10 @@ body {
 /* header alanı başlıyor */
 
 header {
-  padding: 20px 10px 15px 10px;
+  padding: 25px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
 }
 
 .logo {
@@ -59,18 +57,15 @@ header {
 
 nav {
   display: flex;
-  gap: 0; 
+  gap: 15px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 nav a {
-  width: 25%;              
-  text-align: center;      
   color: #0066c8;
   text-decoration: none;
-  font-size: 0.75rem;      
-  padding: 20px;           
 }
-
 
 nav a:hover {
   color: black
@@ -80,14 +75,14 @@ nav a:hover {
 
 /* hero alanı başlıyor */
 .hero {
-  margin-top: 0px;
-  height: 70vh;
+  margin-top: 20px;
+  height: 400px;
   background-color: #080808;
   display: flex;
   justify-content: end;
   flex-direction: column;
-  padding: 10px;
-  border-radius: 0px;
+  padding: 40px;
+  border-radius: 15px;
 }
 
 .hero h1 {
@@ -102,3 +97,54 @@ nav a:hover {
 }
 
 /* hero alanı bitti */
+
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+
+  .hero h1  {
+    font-size: 2rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    flex-direction: row;
+  }
+
+  nav a {
+  text-align: center;
+  width: 25%  ;
+  }
+
+  .wrapper-centered {
+    width: 100%;
+    padding: 0 0;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 10px 15px 10px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 10px;
+    margin-top: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
